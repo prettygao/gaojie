@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>array</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var scores = [60, 90, 60, 14, 54, 24, 58, 50, 52,
+                    54, 48, 69, 34, 55, 51, 82, 44, 66];
+      var min = scores[0];
+      var sign = 0;
+      for (var i = 1; i< scores.length; i++);{
+        if (scores[i] > max){
+          max = scores[i];
+          sign = i;
+        }
+      }
+      document.write("数组中的最大值是："+ max +" 下标是:"+ sign + "<br>");
+    </script>
+  </body>
+</html>
