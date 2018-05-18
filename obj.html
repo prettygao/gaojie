@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = 0;
+    var arr = [1, 2, 3, 4];
+
+     var audi = {
+       make: 'audi',
+       model: 'A6',
+       year: 2016,
+       color: 'black',
+       passengers: 4,
+       convertible: false,
+       mileage: 500
+     }
+
+     var bugatti = {
+       make: 'bugatti',
+       model: 'veyron',
+       year: 2017,
+       color: 'pink',
+       passengers: 2,
+       convertible: true,
+       mileage: 2000000
+     }
+     var fiat = {
+       make: 'Fiat',
+       model: '500',
+       year: 1957,
+       color: 'Medium Blue',
+       dirve: function () {
+         alert("Zoom Zoom!!");
+       }
+     }
+     function isNewCar(car) {
+       if ( car.year >= 2017 && car.mileage<= 10000){
+         document.write(car.make + "是新车");
+       } else {
+         document.write(car.make + "是破车，不值钱");
+       }
+       document.write("<br>");
+     }
+     isNewCar(audi);
+     isNewCar(bugatti);
+
+     fiat.drive();
+     
+  </script>
+  
+</body>
+</html>
