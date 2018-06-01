@@ -11,14 +11,14 @@ var view = {
     var cell = document.getElementById(location);
     cell.setAttribute('class', 'miss');
  }
-} ;
+} 
 view.displayMessage("Tap tap,is this thing on?");
 
 var model = {
   boardSize: 7,
-  numShip: 3, 
-  shipSunk: 1,
-  shipLength: 0,
+  numShips: 3, 
+  shipSunk: 0,
+  shipLength: 3,
 
  ships: [{ locations: [0, 0, 0], hits: ["", "", ""] },
  { locations: [0, 0, 0], hits: ["", "", ""]},
